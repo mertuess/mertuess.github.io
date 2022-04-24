@@ -17,7 +17,6 @@
 }
 
 #fade .new { opacity: 0; }
-#fade { padding:100px; width:350px; display:none; }
 #fade .div_opacity {
   -webkit-transition: opacity .2s ease-in-out;
   -moz-transition: opacity .2s ease-in-out;
