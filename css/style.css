@@ -51,6 +51,9 @@ h1 {
                0 5px 10px rgba(0,0,0,.25),
                0 10px 10px rgba(0,0,0,.2),
                0 20px 20px rgba(0,0,0,.15);
+    
+    animation: showLeft 1s;
+    z-index: 1;
 }
 
 h2 {
@@ -72,4 +75,17 @@ h2 {
                0 5px 10px rgba(0,0,0,.25),
                0 10px 10px rgba(0,0,0,.2),
                0 20px 20px rgba(0,0,0,.15);
+    
+    animation: showRight 1s;
+    z-index: 1;
+}
+
+@keyframes showLeft {
+    from {left:-100%;}
+    to {left:0;}
+}   
+
+@keyframes showRight {
+    from {right:-100%;}
+    to {right:0;}
 }
