@@ -16,8 +16,23 @@
         <meta name="msapplication-TileColor" content="#cdd36c">
         <meta name="theme-color" content="#cdd36c">
 
+        <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+        <script src="scripts/google-translate.js"></script>
+        <script src="https://translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
+
     </head>
     <body style="font-family:Keleti">
+
+        <div class="language">
+            <img src="images/lang/lang__ru.png" alt="ru" data-google-lang="ru" class="language__img flag">
+            <img src="images/lang/lang__en.png" alt="en" data-google-lang="en" class="language__img flag">
+            <img src="images/lang/lang__de.png" alt="de" data-google-lang="de" class="language__img flag">
+            <img src="images/lang/lang__fr.png" alt="fr" data-google-lang="fr" class="language__img flag">
+            <img src="images/lang/lang__pt.png" alt="pt" data-google-lang="pt" class="language__img flag">
+            <img src="images/lang/lang__es.png" alt="es" data-google-lang="es" class="language__img flag">
+            <img src="images/lang/lang__it.png" alt="it" data-google-lang="it" class="language__img flag">
+            <img src="images/lang/lang__zh.png" alt="zh" data-google-lang="zh-CN" class="language__img flag">
+        </div>
 
         <audio autoplay>
             <source src="sounds/hello-sound.wav" type="audio/wav">
@@ -29,25 +44,18 @@
         
         <h1 class = "main_title _anim-items">mertuess games</h1>
     
-        <h2 class = "low_title _anim-items">Here you will definitely find something for yourself</h2>
+        <h2 class = "low_title _anim-items">Здесь вы точно найдете что-то для себя</h2>
 
         <div class = "fitter"><h1></h1></div>
 
-        <div class="block">
+        <div class="block _anim-items">
+            <img src="images/Project-RPG.png" width="500" height="500" class="right-pic _anim-items"/> 
             <h1 class = "default-text _anim-items">
-                <img src="images/Project-RPG.png" width="500" height="500" class="right-pic _anim-items"/> 
-                Project RPG - The first indie RPG from DEADSOUL Company! 
-                Absolutely free, but that doesn't make the game any less interesting. 
-                Explore, develop, make your own story in which you will be the most 
-                invincible hero of all kingdoms.
+                Project RPG — первая инди-ролевая игра от компании DEADSOUL! Абсолютно бесплатно, но от этого игра не становится менее интересной. Исследуйте, развивайтесь, создавайте собственную историю, в которой вы будете самым непобедимым героем всех королевств. 
             </h1>
-            <button class = "pixel-button-free _anim-items" id = "RPG-free-btn" onclick="document.getElementById('btn-snd').play()"></button>
-        </div>        
+            <button class = "btn fourth _anim-items" id = "RPG-free-btn" onclick="document.getElementById('btn-snd').play()"><p class="button-text">Бесплатно</p></button>
+        </div>
         <div class = "fitter"><h1></h1></div>
-        <div class = "fitter"><h1></h1></div>
-        <div class = "fitter"><h1></h1></div>
-
-
 
         <div id="blurred-image-container">
             <div class="img-src" style="background-image:url('css/bg.jpg')"></div>

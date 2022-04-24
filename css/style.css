@@ -23,10 +23,22 @@
 
 .block{
     padding: 50px;
-    padding-left: 200px;
-    padding-right: 200px;
     border: 2px rgba(0, 0, 0, 0);
-    border-radius: 15px;
+    border-radius: 25px;
+    background-color: rgba(10, 10, 10, 0.5);
+    width: 1400px;
+    height: 530px;
+    margin-left: auto;
+    margin-right: auto;
+
+    transform: translate(200px, 0%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+}
+
+.block._active{
+    transform: translate(0px, 0%);
+    opacity: 1;
 }
 
 #fade .new { opacity: 0; }
@@ -43,6 +55,11 @@
 @font-face {
     font-family: Keleti;
     src: url(Keleti-Regular.ttf);
+}
+
+@font-face {
+    font-family: Minecraft;
+    src: url(F77\ Minecraft.ttf);
 }
 
 .main_title {
@@ -109,29 +126,25 @@
 }
 
 .default-text {
-    font-family: Keleti;
+    font-family: Minecraft;
     text-align: justify;
     font-size: 28px;
     
-    color: #FA8072;
     
-    text-shadow: 0 1px 0 #8B0000,
-               0 2px 0 #B22222,
-               0 3px 0 #DC143C,
-               0 4px 0 #CD5C5C,
-               0 5px 0 	#FA8072,
-               0 6px 1px rgba(0,0,0,.1),
-               0 0 5px rgba(0,0,0,.1),
-               0 1px 3px rgba(0,0,0,.3),
-               0 3px 5px rgba(0,0,0,.2),
-               0 5px 10px rgba(0,0,0,.25),
-               0 10px 10px rgba(0,0,0,.2),
-               0 20px 20px rgba(0,0,0,.15);
-
+    color: #f1ebe5;
+    text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+    letter-spacing: 3px;
+    line-height: 1.5;
     
     transform: translate(0px, 120%);
     opacity: 0;
     transition: all 0.8s ease 0s;
+}
+
+.button-text{
+    font-family: Minecraft;
+    text-align: justify;
+    color: #b8afa7;
 }
 
 
@@ -144,11 +157,9 @@
     float: right;
     margin: 0, 0, 5px, 5px;
     border-radius: 50px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
+    padding: 15px;
 
-    transform: translate(0px, 0%);
+    transform: translate(0px, 60%);
     opacity: 0;
     transition: all 0.8s ease 0s;
 }
@@ -158,30 +169,91 @@
     opacity: 1;
 }
 
-.pixel-button-free{
-    float: right;
-    background-image: url("free-button.png");
-    width: 240px;
-    height: 90px;
-    background-repeat : no-repeat;
-    background-position: center center;
-    background-size: 240px;
-    image-rendering: pixelated;
-    outline: none;
-    border: 0;
-    padding-top: 0px;
+body {
+    top: 0 !important;
+  }
+  .skiptranslate {
+    display: none;
+    height: 0;
+  }
+  .language__img {
+    cursor: pointer;
+  }
+
+.language{
+    width: 250px;
+    height: 33px;
+    background-color: #f1ebe598;
+    border-radius: 25px;
+    position: relative;
+    padding-top: 15px;
+    text-align: center;
+    box-shadow: 0 30px 0 #0000;
+}
+
+.flag{
+    border: 15px #0000;
+    border-radius: 5px;
+}
+
+.btn {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Minecraft';
+    font-weight: 700;
+  }
+
+  .btn:hover, .btn:focus {
+    color: #fff;
+    outline: 0;
+  }
+
+  .fourth {
+    float: right;
+    border-color: #f1ebe5;
+    color: #fff;
+    background-image: -webkit-linear-gradient(45deg, #f1ebe5 50%, transparent 50%);
+    background-image: linear-gradient(45deg, #f1ebe5 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+
+    
+    box-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
     
     transform: translate(0px, 120%);
     opacity: 0;
     transition: all 0.8s ease 0s;
-}
+  }
 
-.pixel-button-free._active{
+  .fourth:hover {
+    background-position: 0;
+  }
+
+  .fourth._active{
     transform: translate(0px, 0%);
     opacity: 1;
-}
-
-.pixel-button-free:active {
-    background-image: url("free-button-pressed.png");
-}
+  }
