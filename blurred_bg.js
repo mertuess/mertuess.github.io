@@ -3,3 +3,5 @@ $(window).scroll(function() {
     opacityVal = (s / 150.0);
     $('.blurred-img').css('opacity', opacityVal);
 });
+
+alert('Скрипт работает');
