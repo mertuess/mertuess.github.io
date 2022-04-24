@@ -8,3 +8,16 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
+
+html,body {
+    height:auto !important;
+    height:100%;
+    background: #f0f9ff;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0f9ff), color-stop(100%,#6996d3));
+    background: -webkit-linear-gradient(top,  #f0f9ff 0%,#6996d3 100%);
+    background: -moz-linear-gradient(top,  #f0f9ff 0%, #6996d3 100%);
+    background: -ms-linear-gradient(top,  #f0f9ff 0%,#6996d3 100%);
+    background: -o-linear-gradient(top,  #f0f9ff 0%,#6996d3 100%);
+    background: linear-gradient(to bottom,  #f0f9ff 0%,#6996d3 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#6996d3',GradientType=0 );
+}
