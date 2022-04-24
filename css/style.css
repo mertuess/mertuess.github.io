@@ -32,7 +32,7 @@
     src: url(Keleti-Regular.ttf);
 }
 
-h1 {
+.main_title {
     font-family: Keleti;
     text-align: center;
     font-size: 96px;
@@ -51,12 +51,18 @@ h1 {
                0 5px 10px rgba(0,0,0,.25),
                0 10px 10px rgba(0,0,0,.2),
                0 20px 20px rgba(0,0,0,.15);
-    
-    animation: showLeft 1s;
-    z-index: 1;
+
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
 }
 
-h2 {
+.main_title._active {
+    transform: translate(0px, 0%);
+    opacity: 1;
+}
+
+.low_title {
     font-family: Keleti;
     text-align: center;
     font-size: 48px;
@@ -75,17 +81,14 @@ h2 {
                0 5px 10px rgba(0,0,0,.25),
                0 10px 10px rgba(0,0,0,.2),
                0 20px 20px rgba(0,0,0,.15);
+
     
-    animation: showRight 1s;
-    z-index: 1;
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
 }
 
-@keyframes showLeft {
-    from {left:-100%;}
-    to {left:0;}
-}   
-
-@keyframes showRight {
-    from {right:-100%;}
-    to {right:0;}
+.low_title._active{
+    transform: translate(0px, 0%);
+    opacity: 1;
 }
