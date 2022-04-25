@@ -2,6 +2,36 @@
 <html>
     <head>
         <meta charset="utf-8">
+
+        <ul class="menu-main">
+            <li><a href="" class="current">Домой</a></li>
+            <li><a onclick="
+                const dropdown = document.getElementById('game-drop-down');
+                if(!dropdown.classList.contains('_active'))
+                    dropdown.classList.add('_active');
+                else
+                    dropdown.classList.remove('_active');
+            ">Игры</a></li>
+            <li><a href="#about-us">О нас</a></li>
+        </ul>
+        
+        <div class="language">
+            <img src="images/lang/lang__ru.png" alt="ru" data-google-lang="ru" class="language__img flag">
+            <img src="images/lang/lang__en.png" alt="en" data-google-lang="en" class="language__img flag">
+            <img src="images/lang/lang__de.png" alt="de" data-google-lang="de" class="language__img flag">
+            <img src="images/lang/lang__fr.png" alt="fr" data-google-lang="fr" class="language__img flag">
+            <img src="images/lang/lang__pt.png" alt="pt" data-google-lang="pt" class="language__img flag">
+            <img src="images/lang/lang__es.png" alt="es" data-google-lang="es" class="language__img flag">
+            <img src="images/lang/lang__it.png" alt="it" data-google-lang="it" class="language__img flag">
+            <img src="images/lang/lang__zh.png" alt="zh" data-google-lang="zh-CN" class="language__img flag">
+        </div>
+
+        <div class="drop-down-main" id="game-drop-down">
+            <a href="#project-rpg">Project RPG</a>
+            <a href="#synth-escape">Synth Escape</a>
+            <a href="#ITG">It's That Guy!</a>
+        </div>
+
         <title>mertuess games</title>
         <link href="css/style.css" rel="stylesheet" type="text/css">
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -22,17 +52,7 @@
 
     </head>
     <body style="font-family:Keleti">
-
-        <div class="language">
-            <img src="images/lang/lang__ru.png" alt="ru" data-google-lang="ru" class="language__img flag">
-            <img src="images/lang/lang__en.png" alt="en" data-google-lang="en" class="language__img flag">
-            <img src="images/lang/lang__de.png" alt="de" data-google-lang="de" class="language__img flag">
-            <img src="images/lang/lang__fr.png" alt="fr" data-google-lang="fr" class="language__img flag">
-            <img src="images/lang/lang__pt.png" alt="pt" data-google-lang="pt" class="language__img flag">
-            <img src="images/lang/lang__es.png" alt="es" data-google-lang="es" class="language__img flag">
-            <img src="images/lang/lang__it.png" alt="it" data-google-lang="it" class="language__img flag">
-            <img src="images/lang/lang__zh.png" alt="zh" data-google-lang="zh-CN" class="language__img flag">
-        </div>
+        
 
         <audio autoplay>
             <source src="sounds/hello-sound.wav" type="audio/wav">
@@ -46,6 +66,8 @@
     
         <h2 class = "low_title _anim-items">Здесь вы точно найдете что-то для себя</h2>
 
+        
+        <p><a name="project-rpg"></a></p>
         <div class = "fitter"><h1></h1></div>
 
         <!-- Project RPG -->
@@ -55,8 +77,10 @@
                     </h1><button class="btn fourth _anim-items _active" id="RPG-free-btn" onclick="document.getElementById('btn-snd').play(); document.location='https://github.com/mertuess/Project-RPG'" style=""><p class="button-text">Бесплатно</p></button>
         </div>
             <img src="images/Project-RPG.png" class="right-pic _anim-items _active" style="transform: rotateX(-0.0234918deg) rotateY(0.00822336deg); box-shadow: rgba(0, 0, 0, 0.467) -0.00205584px -0.00587296px 5px 0px;" width="500" height="500"></div>
-        <div class = "fitter"><h1></h1></div>
         <!-- Project RPG -->
+
+        <p><a name="synth-escape"></a></p>
+        <div class = "fitter"><h1></h1></div>
 
         <!-- Synth Escape -->
         <div class="block _anim-items _active">
@@ -64,9 +88,11 @@
                 Synth Escape - второй масштабный инди проект на андройд после "It's That Guy!". Хардкорный геометрический раннер где вам предстоит обходить препятсвия не одним а сразу двумя персонажами! Побеждай своих друзей в этой сложной игре!
                     </h1><button class="btn fourth _anim-items _active" id="RPG-free-btn" onclick="document.getElementById('btn-snd').play()" style=""><p class="button-text">В разработке</p></button>
         </div>
-        <img src="images/SE-icon.png" class="right-pic _anim-items _active" style="transform: rotateX(-0.0234918deg) rotateY(0.00822336deg); box-shadow: rgba(0, 0, 0, 0.467) -0.00205584px -0.00587296px 5px 0px;" width="500" height="500"></div>
-        <div class = "fitter"><h1></h1></div>
+            <img src="images/SE-icon.png" class="right-pic _anim-items _active" style="transform: rotateX(-0.0234918deg) rotateY(0.00822336deg); box-shadow: rgba(0, 0, 0, 0.467) -0.00205584px -0.00587296px 5px 0px;" width="500" height="500"></div>
         <!-- Synth Escape -->
+
+        <p><a name="ITG"></a></p>
+        <div class = "fitter"><h1></h1></div>
 
         <!-- It's That Guy -->
         <div class="block _anim-items _active">
@@ -75,8 +101,50 @@
                     </h1><button class="btn fourth _anim-items _active" id="RPG-free-btn" onclick="document.getElementById('btn-snd').play(); document.location='http://play.google.com/store/apps/details?id=com.DeadSoul.ItsThatGuy'" style=""><p class="button-text">60 руб</p></button>
         </div>
             <img src="images/ITG-icon.png" class="right-pic _anim-items _active" style="transform: rotateX(-0.0234918deg) rotateY(0.00822336deg); box-shadow: rgba(0, 0, 0, 0.467) -0.00205584px -0.00587296px 5px 0px;" width="500" height="500"></div>
-        <div class = "fitter"><h1></h1></div>
         <!-- It's That Guy -->
+        
+        <div class = "fitter"><h1></h1></div>
+
+        <p><a name="about-us"></a></p>
+        <h1 class = "main_title _anim-items">DEADSOUL</h1>
+        <h2 class = "low_title _anim-items">Маленькая, но талантливая команда</h2>
+        
+        <div class = "fitter"><h1></h1></div>
+
+
+        <!-- About Us 1 -->
+        <div class="block _anim-items _active">
+            <div style="width: 850px;float: right;height: 370px;color: transparent;"><h1 class="default-text _anim-items _active">
+                Все началось с одного человека (меня) который захотел делать игры и начал изучать языки программирование параллельно остальным аспектам геймдева. Игры сделаны на движке Unity за счет бесплатности и удобности использования.</h1>
+            </div>
+            <img src="images/unity.png" class="right-pic _anim-items _active" style="transform: rotateX(-0.0234918deg) rotateY(0.00822336deg); box-shadow: rgba(0, 0, 0, 0.467) -0.00205584px -0.00587296px 5px 0px;" width="500" height="500">
+        </div>
+        <!-- About Us 1 -->
+
+        <div class = "fitter"><h1></h1></div>
+
+        <!-- About Us 2 -->
+        <div class="block _anim-items _active">
+            <div style="width: 850px;float: right;height: 370px;color: transparent;"><h1 class="default-text _anim-items _active">
+                Позже ко мне присоединились мои друзья. Первый кто присоединился - New Soul. С ним же нам и пришла идея наименования нашей будующей команды: DEADSOUL. Получилась она из слияния наших никнеймов (тогда я еще был Deadman, и New Soul). Он делал 3D модели и спонсировал проекты. Сейчас за ним создание идеи для Project RPG</h1>
+            </div>
+            <img src="images/dead-soul.jpg" class="right-pic _anim-items _active" style="transform: rotateX(-0.0234918deg) rotateY(0.00822336deg); box-shadow: rgba(0, 0, 0, 0.467) -0.00205584px -0.00587296px 5px 0px;" width="500" height="500">
+        </div>
+        <!-- About Us 2 -->
+
+        <div class = "fitter"><h1></h1></div>
+
+        <!-- About Us 3 -->
+        <div class="block _anim-items _active">
+            <div style="width: 850px;float: right;height: 370px;color: transparent;"><h1 class="default-text _anim-items _active">
+                Когда понадобилось музыкальное сопровождение для игр я, уже знал к кому обращаться - losolka. Он занимался музыкой уже достаточно долго и присоединился к нашей команде как композитор. Его музыкальное сопровождение давала играм невероятную атмосферу которой, как бы я не старался, сам бы никогда не добился визуальной частью.
+            </h1>
+            </div>
+            <img src="images/music.png" class="right-pic _anim-items _active" style="transform: rotateX(-0.0234918deg) rotateY(0.00822336deg); box-shadow: rgba(0, 0, 0, 0.467) -0.00205584px -0.00587296px 5px 0px;" width="500" height="500">
+        </div>
+        <!-- About Us 3 -->
+
+        <div class = "fitter"><h1></h1></div>
 
         <div id="blurred-image-container">
             <div class="img-src" style="background-image:url('css/bg.jpg')"></div>
