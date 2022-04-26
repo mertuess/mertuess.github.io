@@ -124,21 +124,23 @@
         <div class = "fitter"><h1></h1></div>
 
         <!-- coin clicker -->
-        <div class="clicker _anim-items">
-            <p id="coin-img-tag" class="coin-img" onclick="
-                addCoins();
-                document.getElementById('btn-snd').play();
-            "></p>
-            <h1 type="text" id="coins-counter" class="clicker-text"> 0 </h1>
-            <h1 type="text" id="coins-counter-1" class="clicker-text-1"> +1 </h1>
+        <div class="center">
+            <div class="clicker _anim-items">
+                <p id="coin-img-tag" class="coin-img" onclick="
+                    addCoins();
+                    document.getElementById('btn-snd').play();
+                "></p>
+                <h1 type="text" id="coins-counter" class="clicker-text"> 0 </h1>
+                <h1 type="text" id="coins-counter-1" class="clicker-text-1"> +1 </h1>
+            </div>
+            <script src="scripts/clicker.js"></script>
         </div>
-        <script src="scripts/clicker.js"></script>
         <!-- coin clicker -->
 
         <!-- About Us 1 -->
         <div class="block _anim-items _active">
             <div style="width: 850px;float: right;height: 370px;color: transparent;"><h1 class="default-text _anim-items _active">
-                Все началось с одного человека (меня) который захотел делать игры и начал изучать языки программирование параллельно остальным аспектам геймдева. Игры сделаны на движке Unity за счет бесплатности и удобности использования.</h1>
+                Все началось с одного человека (меня) который захотел делать игры и начал изучать языки программирования параллельно остальным аспектам геймдева. Игры сделаны на движке Unity за счет бесплатности и удобности использования.</h1>
             </div>
             <img src="images/unity.png" class="right-pic _anim-items _active" style="transform: rotateX(-0.0234918deg) rotateY(0.00822336deg); box-shadow: rgba(0, 0, 0, 0.467) -0.00205584px -0.00587296px 5px 0px;" width="500" height="500">
         </div>
@@ -147,17 +149,19 @@
         <div class = "fitter"><h1></h1></div>
         
         <!-- pops game -->
-        <div class="pops-div">
-            <p class="pop" onclick="pop_it(0);"></p>
-            <p class="pop" onclick="pop_it(1);"></p>
-            <p class="pop" onclick="pop_it(2);"></p>
-            <p class="pop" onclick="pop_it(3);"></p>
-            <p class="pop" onclick="pop_it(4);"></p>
-            <p class="pop" onclick="pop_it(5);"></p>
-            <p class="pop" onclick="pop_it(6);"></p>
-            <p class="pop" onclick="pop_it(7);"></p>
-            <p class="pop" onclick="pop_it(8);"></p>
-            <p class="pop" onclick="pop_it(9);"></p>
+        <div class="center">
+            <div class="pops-div">
+                <p class="pop" onclick="pop_it(0);"></p>
+                <p class="pop" onclick="pop_it(1);"></p>
+                <p class="pop" onclick="pop_it(2);"></p>
+                <p class="pop" onclick="pop_it(3);"></p>
+                <p class="pop" onclick="pop_it(4);"></p>
+                <p class="pop" onclick="pop_it(5);"></p>
+                <p class="pop" onclick="pop_it(6);"></p>
+                <p class="pop" onclick="pop_it(7);"></p>
+                <p class="pop" onclick="pop_it(8);"></p>
+                <p class="pop" onclick="pop_it(9);"></p>
+            </div>
         </div>
         <!-- pops game -->
 
@@ -177,27 +181,32 @@
             <div style="width: 850px;float: right;height: 370px;color: transparent;"><h1 class="default-text _anim-items _active">
                 Когда понадобилось музыкальное сопровождение для игр, я уже знал к кому обращаться - losolka. Он занимался музыкой уже достаточно долго и присоединился к нашей команде как композитор. Его музыкальное сопровождение давала играм невероятную атмосферу которой, как бы я не старался, сам бы никогда не добился визуальной частью.
             </h1>
-            <p id='los-play'class="play-button _anim-items" onclick="
-                const btn = document.getElementById('los-play');
-                const audio = document.getElementById('pearl-abyss');
-                const music_player = document.getElementById('music-pl');
+                <div class="music-controls">
+                    <p id='los-play'class="play-button _anim-items" onclick="
+                        const btn = document.getElementById('los-play');
+                        const audio = document.getElementById('pearl-abyss');
+                        const music_player = document.getElementById('music-pl');
 
-                if(!btn.classList.contains('_play')){
-                    audio.play();
-                    btn.classList.add('_play');
-                    music_player.classList.add('_active');
-                }
-                else{
-                    audio.pause();
-                    btn.classList.remove('_play');
-                    music_player.classList.remove('_active');
-                }
+                        if(!btn.classList.contains('_play')){
+                            audio.play();
+                            btn.classList.add('_play');
+                            music_player.classList.add('_active');
+                        }
+                        else{
+                            audio.pause();
+                            btn.classList.remove('_play');
+                            music_player.classList.remove('_active');
+                        }
 
-            "></p>
+                    "></p>
+                    <input type="range" class="slider _anim-items" id="volume" min="0" max="100"></input>
+                </div>
             </div>
             <img src="images/music.png" class="right-pic _anim-items _active" style="transform: rotateX(-0.0234918deg) rotateY(0.00822336deg); box-shadow: rgba(0, 0, 0, 0.467) -0.00205584px -0.00587296px 5px 0px;" width="500" height="500">
         </div>
         <!-- About Us 3 -->
+
+        <script src="scripts/volume.js"></script>
 
         <!-- Music Player -->
         <div class="music-player" id ='music-pl'>
@@ -207,13 +216,14 @@
         <!-- Music Player -->
 
         <!-- ITG -->
+        <div class="center">
         <p class="that-guy _anim-items" id="ITG-player" onclick="
             const ITG = document.getElementById('ITG-player');
 
             if(!ITG.classList.contains('_jump')){
                 ITG.classList.add('_jump');
             }
-        "></p>
+        "></p></div>
         <!-- ITG -->
 
         <div class = "fitter"><h1></h1></div>

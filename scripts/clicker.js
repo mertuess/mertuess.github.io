@@ -11,12 +11,6 @@ function addCoins(){
         coins_counter.classList.add('_active');
     }
     coins_counter.innerText = '' + coins;
-    if(!coin.classList.contains('_pressed')){
-        coin.classList.add('_pressed');
-    }
-    else{
-        coin.classList.remove('_pressed');
-    }
 
     if(!coin_plus.classList.contains('_active')){
         coin_plus.classList.add('_active');
