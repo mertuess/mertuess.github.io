@@ -561,6 +561,7 @@ body {
   padding: 0;
   bottom:0;
   text-align: left;
+  z-index: 0;
 
   pointer-events: none;
 
@@ -669,4 +670,9 @@ body {
 .slider._active{
   transform: translate(0px, 0%);
   opacity: 1;
+}
+
+.ITGWeb{
+  border-radius: 25px;
+  width: 300px;
 }
