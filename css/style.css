@@ -683,16 +683,18 @@ body {
   padding: 20px;
   overflow-x: scroll;
   touch-action: pan-x;
-  list-style: none; 
+  list-style: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .item {
-  height: 776px;
-  width: 1380px;
+  height: 768px;
+  width: 1360px;
   flex-shrink: 0;
 }
 
-.item:not(:last-child) { margin-right: 10px; }
+.item:not(:last-child) {  }
 
 .item:last-child {
   position: relative;
@@ -717,6 +719,51 @@ body {
   transform: translate(0px, 0%);
   opacity: 1;
 }
+
+.swipe-button-left{
+  border-radius: 25px;
+  width: 100px; height: 100px;
+  position: absolute;
+  border: 0;
+  background-color: rgba(10, 10, 10, 0.5);
+  top:342px;
+  background-size: 70px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.swipe-button-right{
+  border-radius: 25px;
+  width: 100px; height: 100px;
+  position: absolute;
+  border: 0;
+  background-color: rgba(10, 10, 10, 0.5);
+  top:342px;
+  background-size: 70px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@keyframes swipe-button-right-anim {
+  0%{transform: translate(0px, 0%);}
+  50%{transform: translate(25px, 0%);}
+  100%{transform: translate(0px, 0%);}
+}
+
+@keyframes swipe-button-left-anim {
+  0%{transform: translate(0px, 0%);}
+  50%{transform: translate(-25px, 0%);}
+  100%{transform: translate(0px, 0%);}
+}
+
+.swipe-button-right._pressed{
+  animation: swipe-button-right-anim 0.5s;
+}
+
+.swipe-button-left._pressed{
+  animation: swipe-button-left-anim 0.5s;
+}
+
 /* Adaptive Gallery */
 
 .div-st{

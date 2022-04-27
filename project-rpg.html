@@ -65,7 +65,7 @@
             <p><a name="description"></a></p>
 
             <!-- Description -->
-            <h1 class="default-text _anim-items" style="z-index: 1; position: relative; width: 1400px; text-align: justify;">
+            <h1 class="default-text _anim-items" style="z-index: 1; position: relative; width: 1400px; text-align: justify; pointer-events: none;">
                 <hr>
                 Project RPG — первая инди-ролевая игра от компании DEADSOUL!
                 Абсолютно бесплатно, но от этого игра не становится менее интересной.
@@ -83,15 +83,23 @@
             <!-- Screenshots -->
             <div class="viewport _anim-items">
                 <hr>
-                <ul class="list">
-                  <li class="item" style="background-image: url(images/screenshots/screenshot-example.png); background-size: 100%;"></li>
-                  <li class="item" style="background-image: url(images/screenshots/screenshot-example.png); background-size: 100%;"></li>
+                <ul class="list" id="screenshots" style="pointer-events: none;">
+                  <li class="item" id = "reference" style="background-image: url(images/screenshots/screenshot-example.png); background-size: 100%;"></li>
+                  <li class="item scrollrect" style="background-image: url(images/screenshots/screenshot-example.png); background-size: 100%;"></li>
                   <li class="item" style="background-image: url(images/screenshots/screenshot-example.png); background-size: 100%;"></li>
                   <li class="item" style="background-image: url(images/screenshots/screenshot-example.png); background-size: 100%;"></li>
                   <li class="item" style="background-image: url(images/screenshots/screenshot-example.png); background-size: 100%;"></li>
                 </ul>
+                <button class="swipe-button-left" onclick="moveLeft();" style="
+                background-image: url('images/arrow-left.png');
+                left:35px;"></button>
+                <button class="swipe-button-right" onclick="moveRight();" style="
+                background-image: url('images/arrow-right.png');
+                left:1265px;"></button>
               </div>
             <!-- Screenshots -->
+
+            <script src="scripts/scroller.js" type="text/javascript"></script>
 
             <p><a name="download"></a></p>
 
