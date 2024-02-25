@@ -6,6 +6,7 @@ let patterns = [
     "...пушить базу Решалы.",
     "...сидеть в меню тридцать минут и умирать за пять в рейде.",
     "...выходить на лабу в поисках ПМа на трассерах.",
+    "Backend error! 228 - ItemsMoving: failed to lock profile",
 ];
 
 let message = document.getElementById('message');
