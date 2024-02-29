@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+
+}
+@font-face {
+    font-family: bender_f;
+    src: url(../fonts/Jovanny\ Lemonad\ -\ Bender.otf);
+}
+
+body {
+    font-family: bender_f, sans-serif;
+    line-height: 1.55;
+    background-color: black;
+}
+.main-header {
+    position: relative;
+}
+.layers {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+.layer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    will-change: transform;
+}
+.layers__base {
+    transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
+}
+.layers__middle {
+    transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
+}
+.layers__front {
+    z-index: 2;
+}
+.layer__header {
+    z-index: 1;
+    color: azure;
+    transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
+    overflow: hidden;
+    position: relative;
+}
+.layers__caption {
+    font-size: 48px;
+    line-height: 48px;
+    text-shadow: 1px 1px 2px black;
+}
+.layers__logo {
+    width: 600px;
+    filter: drop-shadow(1px 1px 2px black);
+}
+
+.main-article {
+    min-height: 100vh;
+    color: azure;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+.main-article__header {
+    font-size: 36px;
+    font-style: normal;
+}
