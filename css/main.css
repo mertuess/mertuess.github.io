@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    list-style: none;
+    text-decoration: none;
+}
+/* Fonts */
+.ibm-plex mono-light {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 300;
+    font-style: normal;
+}
+/* Animations */
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+section{
+    padding: 0 19%;
+}
+.logo{
+    font-size: 30px;
+    font-weight: 800;
+    color: white;
+}
+.menu{
+    display: flex;
+}
+.menu a{
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.menu a:hover{
+    border-bottom: 2px solid white;
+}
+#menu-icon{
+    color: white;
+    font-size: 40px;
+    z-index: 101;
+    cursor: pointer;
+    display: none;
+}
+.main-frame{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(122deg, #000000,#230b10,#331016,#230b10,#000000);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+.main-frame-text{
+    color: white;
+    cursor: default;
+    transition: all 1s ease;
+}
+.main-frame-text h4{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.25);
+}
+.main-frame-text h3{
+    font-size: 35px;
+    margin-left: 10px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.main-frame-text h2{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 300;
+    line-height: 1;
+    font-style: normal;
+    font-size: 60px;
+    overflow: hidden;
+    width: 8ch;
+    margin-left: 20px;
+    border-right: 2px solid;
+    animation: typing .5s steps(8), blink .5s step-end infinite alternate;
+}
+.img-logo img{
+    width: 512px;
+    height: auto;
+}
+@media (max-width: 1535px){
+    header{
+        padding: 15px 3%;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 1460px){
+    section{
+        padding: 0 12%;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 1340px){
+    .img-logo img{
+        width: 256px;
+        height: auto;
+        transition: .2s;
+    }
+}
+
+@media (max-width: 1195px){
+    section{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .main-frame-text{
+        padding-left: 15%;
+        padding-top: 115px;
+    }
+    .img-logo{
+        text-align: center;
+    }
+    .img-logo img{
+        width: 512px;
+        height: auto;
+    }
+    .main-frame{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+}
