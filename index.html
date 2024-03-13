@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;1,300&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <script src="https://unpkg.com/scrollreveal"></script>
 
 </head>
 <body>
@@ -22,16 +22,16 @@
     <header>
         <a href="#" class="logo">MERTUESS</a>
 
-        <ul class="menu">
+        <ul class="menu" id="menu">
             <li><a href="#">Домой</a></li>
             <li><a href="#">Обо мне</a></li>
             <li><a href="#">Проекты</a></li>
             <li><a href="#">Контакты</a></li>
             <li><a href="#">Облако</a></li>
-            <li><a href="#">GitHub</a></li>
+            <li><a href="https://github.com/mertuess">GitHub</a></li>
         </ul>
 
-        <div class="bx bx-menu" id="menu-icon"></div>
+        <div class="bx bx-menu" id="menu-icon" onclick="openMenu()"></div>
     </header>
 
     <section class="main-frame">
@@ -46,7 +46,39 @@
         <div class="img-logo">
             <img src="./resources/img/m_logo.png">
         </div>
+    </section>
 
+    <section class="main-frame sec-block">
+        <div class="img-logo">
+            <img src="./resources/img/m_logo.png">
+        </div>
+        <div class="main-frame-text">
+            <h3>Обо мне</h3>
+            <p>
+                Впрочем, рассказывать особо нечего. Эта страничка создана для того, 
+                чтобы показать умение разрабатывать простейшие
+                сайты на которых вы мало чего найдете.
+            </p>
+            <p>
+                Ладно. Меня зовут Дмитрий. Мне от роду 21 год. Пишу игры, сайты, софт. Увлекаюсь дизайном.
+            </p>
+            <p>
+                Черт. Вроде хотел написать парсер, чтобы было проще узнавать расписание в ВУЗе, а по итогу написал лендинг...
+                Ну с кем не бывает? :3
+            </p>
+        </div>
+    </section>
+
+    <section class="main-frame sec-block">
+        <div class="main-frame-text">
+            <h3>Проекты</h3>
+            <p>Тут вы найдете все ссылки на странички которые я разрабатывал, чтобы принести "Эстетическое удовольствие друзьям"</p>
+            <a href="./Pages/EFTInvite/eft_invite.html">Escape From Tarkov: Invite</a>
+            <a href="./Pages/GamesForOrlova/games_for_Nastiusha.html">Подборка кооп игр</a>
+        </div>
+        <div class="img-logo">
+            <img src="./resources/img/m_logo.png">
+        </div>
     </section>
 
     <footer>
@@ -55,5 +87,6 @@
 
     <!-- <a href="./Pages/EFTInvite/eft_invite.html">Escape from Tarkov: Invite</a>
     <a href="./Pages/GamesForOrlova/games_for_Nastiusha.html">Orlova Game Chart</a> -->
+
 </body>
 </html>
