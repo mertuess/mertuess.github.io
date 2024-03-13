@@ -38,6 +38,16 @@ header{
     padding: 33px 9%;
     background: transparent;
 }
+footer{
+    text-align: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+}
+footer p{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
 section{
     padding: 0 19%;
 }
@@ -165,6 +175,7 @@ body{
     }
     .main-frame-text{
         padding-left: 15%;
+        padding-right: 15%;
         padding-top: 115px;
     }
     .img-logo{
@@ -180,7 +191,19 @@ body{
         grid-template-columns: 1fr;
     }
     #menu-icon{
+        font-size: 80px;
         display: inline-block;
+    }
+    .logo{
+        font-size: 100px;
+    }
+    .sec-img{
+        position: absolute;
+        opacity: 0.2;
+    }
+    .sec-block{
+        height: 50%;
+        min-height: 50vh;
     }
     .menu{
         position: absolute;
@@ -200,6 +223,7 @@ body{
         margin-left: 0;
         display: block;
         margin: 10px 0;
+        font-size: 30px;
     }
     .menu.open{
         right: 0;
@@ -218,5 +242,8 @@ body{
     }
     .main-frame-text a{
         font-size: 36px;
+    }
+    footer p{
+        font-size: 28px;
     }
 }
