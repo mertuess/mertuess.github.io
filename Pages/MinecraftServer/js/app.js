@@ -1,5 +1,11 @@
-
 let arrow = document.querySelector('.arr-icon');
+let menu = document.getElementById('menu');
+let menuIcon = document.querySelector('#menu-icon');
+
+function openMenu() {
+    menu.classList.toggle('open');
+    menuIcon.classList.toggle('bx-x');
+}
 
 window.addEventListener('scroll', e => {
     document.body.style.cssText = '--scrollTop: ' + this.scrollY + 'px'
