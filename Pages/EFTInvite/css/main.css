@@ -3,9 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-:root {
-
-}
 @font-face {
     font-family: bender_f;
     src: url(../fonts/Jovanny\ Lemonad\ -\ Bender.otf);
