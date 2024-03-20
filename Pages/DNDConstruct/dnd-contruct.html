@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DnD - Construct</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/app.js" defer></script>
+
+    <!-- Third-Party -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"/>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="logo">D&D: Construct</a>
+        <ul class="menu" id="menu">
+            <li><a href="#">Домой</a></li>
+            <li><a href="#about">О проекте</a></li>
+            <li><a href="#about-us">Команда</a></li>
+            <li><a href="https://mertuess.github.io">На основной сайт</a></li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon" onclick="openMenu()"></div>
+    </header>
+
+    <section class="main-block">
+        <div>
+            <img src="./Resources/imgs/dnd-logo.png">
+            <h1>Construct</h1>
+        </div>
+    </section>
+
+    <section class="block" id="about">
+        <div class="splash"> 
+            <img src="./Resources/imgs/char-1.png">
+        </div>
+        <div class="text">
+            <h2>Глава 1. Приложение - как игра</h2>
+            <p>Основной идеей нашего приложения - является совмещение игрового процесса во время создания сценария</p>
+            <p>Добится такого эффекта довольно сложно, но поразмыслив над данной идеей мы пришли к выводу, что, прописывая персонажа, гораздо приятнее опираться на графическую составляющую этого процесса.</p>
+            <p>Все необходимые вычисления можете спокойно доверить нашему приложению, а сами пока продумайте историю, визуальное представление, экипировку своего персонажа или же NPC!</p>
+        </div>
+        <div class="text">
+            <h2>Глава 2. Удобство и мобильность</h2>
+            <p>Наше приложение - это, по сути, сайт. Пользоваться им можно откуда угодно, лишь бы был интернет.</p>
+            <p>Версии для мобильных телефонов и десктопное приложение подключаются к сайту и выводят изображение с него. Да, прямо таки "мини-браузер"</p>
+        </div>
+        <div class="splash"> 
+            <img src="./Resources/imgs/char-2.png">
+        </div>
+    </section>
+
+    <section class="block">
+        <div class="splash"> 
+            <img src="./Resources/imgs/char-3.png">
+        </div>
+        <div class="text">
+            <h2>Глава 3. Ваша безопастность - превыше всего</h2>
+            <p>Мы гарантируем безопастность конечного пользователя! Мы не держим никакой вашей личной информации на серверах!</p>
+            <p>Ваши сюжеты экспортируются в специальный файл и только вы - его единственный держатель.</p>
+            <p>Позже, чтобы продолжить работу над проектом вы его импортируете в приложение и спокойно редактируете как вам угодно!</p>
+        </div>
+        <div class="text">
+            <h2>Глава 4. Красота и простота</h2>
+            <p>Вы когда нибуть работали с блок-схемами? Если да, то интерфейс нашей программы покажется вам, до боли знакомым!</p>
+            <p>В приложении есть множество блоков, от "диалога" до "боя" и расставляя их и связывая вы продумываете интереснейший сюжет вашей игры!</p>
+            <p>В самих блоках вы редактируете взаимодействие между, заранее написанными, прерсонажами. Перетащил - и все готово!</p>
+        </div>
+        <div class="splash right down"> 
+            <img src="./Resources/imgs/d20.png">
+        </div>
+    </section>
+
+    <section class="aboutus" id="about-us">
+        <h1>Наша команда</h1>
+        <div class="skewed">
+            <!-- Я -->
+            <button class="item" onclick="selectEmployee(0)">
+                <img src="./Resources/imgs/emp/1.jpg" class="pan-img">
+            </button>
+            <!-- Алиса -->
+            <button class="item" onclick="selectEmployee(1)">
+                <img src="./Resources/imgs/emp/2.png" class="pan-img">
+            </button>
+            <!-- Люба -->
+            <button class="item" onclick="selectEmployee(2)">
+                <img src="./Resources/imgs/emp/3.png" class="pan-img">
+            </button>
+            <!-- Матвей -->
+            <button class="item" onclick="selectEmployee(3)">
+                <img src="./Resources/imgs/emp/4.png" class="pan-img">
+            </button>
+            <!-- Андрей -->
+            <button class="item" onclick="selectEmployee(4)">
+                <img src="./Resources/imgs/emp/5.jpg" class="pan-img">
+            </button>
+            <!-- Миша -->
+            <button class="item" onclick="selectEmployee(5)">
+                <img src="./Resources/imgs/emp/6.jpg" class="pan-img">
+            </button>
+        </div>
+        <div class="infos">
+            <h1 class="name">Дмитрий Тюриков</h1>
+            <h2 class="post">Программист</h2>
+            <p class="info">Пишет всякое на паскале. На районе называют "Хакер". Один раз взломал шаурмечную у дома, так он называет попытку не заплатить за шаурму за которую его избили веником</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>©mertuess</p>
+    </footer>
+</body>
+</html>

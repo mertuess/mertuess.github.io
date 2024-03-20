@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "MainText", sans-serif;
+    font-style: normal;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: Logos;
+    src: url(../fonts/Nodesto\ Cyrillic\ Regular.ttf);
+}
+@font-face {
+    font-family: SubLogos;
+    src: url(../fonts/Alegreya/AlegreyaSC-Regular.ttf);
+}
+@font-face {
+    font-family: SubLogos_bold;
+    src: url(../fonts/Alegreya/AlegreyaSC-Black.ttf);
+}
+@font-face {
+    font-family: MainText;
+    src: url(../fonts/Mookmania/Mookmania.otf);
+}
+body{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.3)), url('../Resources/imgs/bg.jpg');
+}
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+    transition: all .55s ease;
+}
+header.hide{
+    top: -120px;
+}
+.logo{
+    font-family: "Logos", sans-serif;
+    font-size: 50px;
+    color: #ec2127;
+}
+.menu{
+    display: flex;
+}
+.menu a{
+    color: white;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.menu a:hover{
+    border-bottom: 2px solid white;
+}
+#menu-icon{
+    color: white;
+    font-size: 40px;
+    z-index: 101;
+    cursor: pointer;
+    display: none;
+}
+/* Main Block */
+.main-block{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+}
+.main-block h1{
+    font-size: 120px;
+    color: #ec2127;
+    font-family: "SubLogos_bold";
+    line-height: 0.6;
+}
+.main-block h2{
+    font-size: 38px;
+    color: white;
+    font-family: "NotoSans_light";
+}
+/* Block */
+.block{
+    padding: 25px;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    background: rgb(24, 24, 27);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 2rem;
+}
+.block h2{
+    color: #ec2127;
+    font-family: "SubLogos";
+    line-height: 2;
+    font-size: 36px;
+}
+.block p{
+    color: white;
+    font-family: "MainText";
+    line-height: 1.6;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.text{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* Splashes */
+.splash{
+    
+}
+.splash img{
+    height: 400px;
+    width: auto;
+    position: relative;
+}
+footer p{
+    font-size: 18px;
+    text-align: center;
+    line-height: 3;
+    color: gray;
+}
+footer{
+    background: rgb(24, 24, 27);
+}
+
+/* Skewed panels */
+.aboutus{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Resources/imgs/au-bg.jpg);
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    text-align: center;
+}
+.skewed{
+    display: flex;
+    overflow: hidden;
+}
+.item{
+    width: 17%;
+    height: 512px;
+    overflow: hidden;
+    transition: all .55s ease;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    border: 0;
+}
+.item:hover{
+    width: 32%;
+}
+.item:focus{
+    width: 32%;
+}
+.item:focus img{
+    margin-left: 0px;
+}
+.pan-img{
+    width: 512px;
+    height: 512px;
+    /* margin-left: -256px; */
+    transition: all .55s ease;
+}
+.pan-img:hover{
+    margin-left: 0px;
+}
+.name{
+    margin-left: 2%;
+    margin-right: 2%;
+    line-height: 1.6;
+    margin-top: 15px;
+    color: white;
+    font-family: "SubLogos";
+    font-size: 48px;
+}
+.post{
+    margin-left: 2%;
+    margin-right: 2%;
+    line-height: 1;
+    color: white;
+    font-size: 42px;
+    font-family: "MainText";
+}
+.info{
+    margin-left: 2%;
+    margin-right: 2%;
+    line-height: 1.6;
+    margin-top: 15px;
+    color: white;
+    font-size: 28px;
+    font-family: "MainText";
+}
+.aboutus h1{
+    line-height: 1.6;
+    color: white;
+    font-family: "SubLogos";
+    font-size: 48px;
+}
+
+
+
+@media (max-width: 1195px){
+    .text{
+        text-align: center;
+    }
+    .vert-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .m-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .img{
+        width: 0px;
+    }
+    .img img{
+        width: 0px;
+    }
+    #menu-icon{
+        font-size: 80px;
+        display: inline-block;
+    }
+    .sec-section{
+        height: 50%;
+        width: 100%;
+        min-height: 50vh;
+    }
+    .menu{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 40vh;
+        background: #00000077;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        border-radius: 25px 0px 0px 25px;
+        transition: all .55s ease;
+    }
+    .menu a{
+        margin-left: 0;
+        display: block;
+        margin: 10px 0;
+        font-size: 30px;
+    }
+    .menu.open{
+        right: 0;
+    }
+}
