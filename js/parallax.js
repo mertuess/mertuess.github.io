@@ -1,6 +1,5 @@
 const parallax_back_ground = document.querySelector('.background');
 
 document.addEventListener('scroll', function() {
-    console.log(window.scrollY);
     parallax_back_ground.setAttribute("style", "background-position-y: " + -window.scrollY/2 + "px;");
 });
