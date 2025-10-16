@@ -8,7 +8,9 @@ document.addEventListener('scroll', function() {
 
 document.addEventListener('mousemove', function(event) {
     _position = event.clientY;
+});
 
+function HideAndSeek(){
     if(_scroll >= 100){
         if(_position > 100){
             header.classList.add('hide');
@@ -20,4 +22,6 @@ document.addEventListener('mousemove', function(event) {
     else{
         header.classList.remove('hide');
     }
-});
+}
+
+setInterval(HideAndSeek, 250);

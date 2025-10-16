@@ -1,0 +1,27 @@
+.grid-0 {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "person-1 person-2 person-3 label label"
+        "steps steps text design coding";
+    width: 97%;
+}
+
+.label { grid-area: label; display: grid; padding: 15px; }
+
+.steps { grid-area: steps; display: grid; padding: 15px; }
+
+.person-1 { grid-area: person-1; display: grid; padding: 15px; }
+
+.person-2 { grid-area: person-2; display: grid; padding: 15px; }
+
+.person-3 { grid-area: person-3; display: grid; padding: 15px; }
+
+.text { grid-area: text; display: grid; padding: 15px; }
+
+.design { grid-area: design; display: grid; padding: 15px; }
+
+.coding { grid-area: coding; display: grid; padding: 15px; }

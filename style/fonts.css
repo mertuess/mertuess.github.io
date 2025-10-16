@@ -1,0 +1,76 @@
+@font-face {
+    font-family: "Ostrovsky";
+    src: url("../res/fonts/Ostrovsky.otf");
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url("../res/fonts/Montserrat.ttf");
+}
+
+h1{
+    font-family: "Ostrovsky";
+    font-size: 64px;
+    /* margin: 64px; */
+}
+
+h2{
+    font-family: "Montserrat";
+    font-size: 36px;
+    font-weight: bolder;
+    margin: 12px;
+}
+
+h3{
+    font-family: "Montserrat";
+    font-size: 32px;
+    font-weight: bold;
+    margin: 12px;
+}
+
+h4{
+    font-family: "Montserrat";
+    font-size: 24px;
+    font-weight: normal;
+    margin: 12px;
+}
+
+p.t1{
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: bold;
+    margin: 12px;
+}
+
+p.t2{
+    font-family: "Montserrat";
+    font-size: 16px;
+    font-weight: light;
+    margin: 12px;
+}
+
+.logo-top{
+    font-family: "Ostrovsky";
+    font-size: 24px;
+    margin: 0;
+}
+
+.logo-bottom{
+    font-family: "Montserrat";
+    font-size: 12px;
+    font-weight: 200;
+    margin: 0;
+}
+
+.welcome-header{
+    line-height: 151px;
+    height: 100%;
+    margin-top: 150px;
+}
+
+.no-select-text {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+}

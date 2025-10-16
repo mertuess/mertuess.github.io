@@ -1,0 +1,12 @@
+section{
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#home{
+    height: calc(100vh - 100px);
+}

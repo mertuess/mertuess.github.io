@@ -1,0 +1,44 @@
+.block{
+    background-color: #3D3D3D;
+    display: flex;
+    flex-direction: row;
+    border-radius: 2rem;
+    text-align: left;
+    height: 100%;
+    width: 100%;
+}
+
+.block.invert{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    border-radius: 2rem;
+    margin: 15px;
+}
+
+.block.column{
+    background-color: #3D3D3D;
+    flex-direction: column;
+    border-radius: 2rem;
+    justify-content: start;
+}
+
+.block.column img{
+    border-radius: 2rem;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1.7;
+    filter: grayscale(100%);
+}
+
+.block img{
+    border-radius: 2rem;
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+.block div{
+    margin: 30px;
+}
